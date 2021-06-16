@@ -8,6 +8,10 @@ namespace LinkedList
     {
         public Node head;
 
+        /// <summary>
+        /// Adding elements in the LinkedList
+        /// </summary>
+        /// <param name="data"></param>
         public void Add(int data)
         {
             Node node = new Node(data);
@@ -27,6 +31,9 @@ namespace LinkedList
             }
         }
 
+        /// <summary>
+        /// Displaying the elements
+        /// </summary>
         public void Display()
         {
             Node temp = this.head;
