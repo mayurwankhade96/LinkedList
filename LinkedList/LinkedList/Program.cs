@@ -11,9 +11,9 @@ namespace LinkedList
             // Creating a linkedlist using LinkedList class
             LinkedList list = new LinkedList();
 
-            list.AddToBeginning(70);
-            list.AddToBeginning(30);
-            list.AddToBeginning(56);
+            list.AddToEnd(56);
+            list.AddToEnd(30);
+            list.AddToEnd(70);
             list.Display();
         }
     }

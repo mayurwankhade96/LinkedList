@@ -9,10 +9,10 @@ namespace LinkedList
         public Node head;
 
         /// <summary>
-        /// Adding elements in the beginning of the LinkedList
+        /// Adding elements at the end of the LinkedList
         /// </summary>
         /// <param name="data"></param>
-        public void AddToBeginning(int data)
+        public void AddToEnd(int data)
         {
             Node node = new Node(data);
 
@@ -22,9 +22,12 @@ namespace LinkedList
             }
             else
             {
-                Node temp = new Node(data);
-                temp.next = head;
-                head = temp;
+                Node temp = head;
+                while(temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = node;
             }
         }
 
