@@ -10,9 +10,15 @@ namespace LinkedList
 
             // Creating a linkedlist using LinkedList class
             LinkedList list = new LinkedList();
+<<<<<<< HEAD
             list.Add(70);
             list.Add(30);
             list.Add(56);
+=======
+            list.AddToEnd(56);
+            list.AddToEnd(30);
+            list.AddToEnd(70);
+>>>>>>> UC1-CreateLinkedList
             list.Display();
         }
     }

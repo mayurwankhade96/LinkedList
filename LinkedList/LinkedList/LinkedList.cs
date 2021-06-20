@@ -9,10 +9,17 @@ namespace LinkedList
         public Node head;
 
         /// <summary>
+<<<<<<< HEAD
         /// Adding elements in the beginning
         /// </summary>
         /// <param name="data"></param>
         public void Add(int data)
+=======
+        /// Method to add data to the end of the LinkedList
+        /// </summary>
+        /// <param name="data"></param>
+        public void AddToEnd(int data)
+>>>>>>> UC1-CreateLinkedList
         {
             Node node = new Node(data);
 
@@ -29,7 +36,11 @@ namespace LinkedList
         }
 
         /// <summary>
+<<<<<<< HEAD
         /// Displaying the elements
+=======
+        /// Method to display data present in the LinkedList
+>>>>>>> UC1-CreateLinkedList
         /// </summary>
         public void Display()
         {
