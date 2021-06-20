@@ -9,7 +9,7 @@ namespace LinkedList
         public Node head;
 
         /// <summary>
-        /// Adding elements in the LinkedList
+        /// Adding elements in the beginning
         /// </summary>
         /// <param name="data"></param>
         public void Add(int data)
@@ -25,11 +25,6 @@ namespace LinkedList
                 Node temp = new Node(data);
                 temp.next = head;
                 head = temp;
-                //while(temp.next != null)
-                //{
-                //    temp = temp.next;
-                //}
-                //temp.next = node;
             }
         }
 
