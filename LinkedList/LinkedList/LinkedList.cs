@@ -9,10 +9,10 @@ namespace LinkedList
         public Node head;
 
         /// <summary>
-        /// Adding elements in the beginning
+        /// Adding elements in the beginning of the LinkedList
         /// </summary>
         /// <param name="data"></param>
-        public void Add(int data)
+        public void AddToBeginning(int data)
         {
             Node node = new Node(data);
 
@@ -29,7 +29,7 @@ namespace LinkedList
         }
 
         /// <summary>
-        /// Displaying the elements
+        /// Displaying the elements from the LinkedList
         /// </summary>
         public void Display()
         {
