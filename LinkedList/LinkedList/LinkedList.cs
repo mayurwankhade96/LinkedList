@@ -29,7 +29,7 @@ namespace LinkedList
         }
 
         /// <summary>
-        /// Displaying the elements from the LinkedList
+        /// Method to display data present in the LinkedList
         /// </summary>
         public void Display()
         {
