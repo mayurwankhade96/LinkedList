@@ -10,6 +10,7 @@ namespace LinkedList
 
         /// <summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
         /// Adding elements in the beginning
         /// </summary>
         /// <param name="data"></param>
@@ -20,6 +21,12 @@ namespace LinkedList
         /// <param name="data"></param>
         public void AddToEnd(int data)
 >>>>>>> UC1-CreateLinkedList
+=======
+        /// Adding elements in the beginning of the LinkedList
+        /// </summary>
+        /// <param name="data"></param>
+        public void AddToBeginning(int data)
+>>>>>>> UC2-AddToLinkedList
         {
             Node node = new Node(data);
 
@@ -37,10 +44,14 @@ namespace LinkedList
 
         /// <summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
         /// Displaying the elements
 =======
         /// Method to display data present in the LinkedList
 >>>>>>> UC1-CreateLinkedList
+=======
+        /// Displaying the elements from the LinkedList
+>>>>>>> UC2-AddToLinkedList
         /// </summary>
         public void Display()
         {
