@@ -48,6 +48,12 @@ namespace LinkedList
             }
         }
 
+        /// <summary>
+        /// Adding elements at particular position in LinkedList
+        /// </summary>
+        /// <param name="position"></param>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public Node InsertAtParticularPosition(int position, int data)
         {
             if (position < 1)
