@@ -18,6 +18,13 @@ namespace LinkedListProblem
             list.DeleteNode(40);
             list.Display();
             Console.WriteLine("\n" + "Linked List Size : " + list.Size());
+
+            LinkedList listOne = new LinkedList();
+            listOne.Sort(56);
+            listOne.Sort(30);
+            listOne.Sort(40);
+            listOne.Sort(70);
+            listOne.Display();
         }
     }
 }
