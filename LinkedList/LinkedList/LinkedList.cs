@@ -12,13 +12,13 @@ namespace LinkedListProblem
         /// Adding elements at the end of the LinkedList
         /// </summary>
         /// <param name="data"></param>
-        public void AddToEnd(int data)
+        public void Add(int data)
         {
             Node node = new Node(data);
 
             if (this.head == null)
             {
-                this.head = new Node(data);
+                this.head = node;
             }
             else
             {
@@ -54,7 +54,7 @@ namespace LinkedListProblem
         /// <param name="position"></param>
         /// <param name="data"></param>
         /// <returns></returns>
-        internal Node InsertAtParticularPosition(int position, int data)
+        public Node InsertAtParticularPosition(int position, int data)
         {
             if (position < 1)
                 Console.WriteLine("Invalid Position!");
@@ -67,6 +67,7 @@ namespace LinkedListProblem
             }
             else
             {
+                var firstHead = this.head;
                 while (position-- != 0)
                 {
                     if (position == 1)
@@ -78,6 +79,9 @@ namespace LinkedListProblem
                     }
                     head = head.next;
                 }
+                firstHead.next = head;
+                head = firstHead;
+
                 if (position != 1)
                     Console.WriteLine("Position out of range");
             }

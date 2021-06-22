@@ -11,9 +11,10 @@ namespace LinkedListProblem
             // Creating a linkedlist using LinkedList class
             LinkedList list = new LinkedList();
 
-            list.AddToEnd(56);
-            list.AddToEnd(30);
-            list.AddToEnd(70);
+            list.Add(56);
+            list.Add(30);            
+            list.Add(70);
+            list.InsertAtParticularPosition(3, 40);
             list.Display();
         }
     }
