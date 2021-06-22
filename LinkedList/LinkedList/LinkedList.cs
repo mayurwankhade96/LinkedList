@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LinkedList
+namespace LinkedListProblem
 {
-    class LinkedList
+    public class LinkedList
     {
-        public Node head;
+        internal Node head;
 
         /// <summary>
         /// Adding elements at the end of the LinkedList
@@ -54,7 +54,7 @@ namespace LinkedList
         /// <param name="position"></param>
         /// <param name="data"></param>
         /// <returns></returns>
-        public Node InsertAtParticularPosition(int position, int data)
+        internal Node InsertAtParticularPosition(int position, int data)
         {
             if (position < 1)
                 Console.WriteLine("Invalid Position!");
@@ -88,7 +88,7 @@ namespace LinkedList
         /// Method to remove first node from LinkedList
         /// </summary>
         /// <returns></returns>
-        public Node RemoveFirstNode()
+        internal Node RemoveFirstNode()
         {
             if (this.head == null)
             {
@@ -102,7 +102,7 @@ namespace LinkedList
         /// Method to remove last node from LinkedList
         /// </summary>
         /// <returns></returns>
-        public Node RemoveLastNode()
+        internal Node RemoveLastNode()
         {
             if (head == null)
             {
@@ -119,6 +119,24 @@ namespace LinkedList
             }
             newNode.next = null;
             return head;
+        }
+
+        /// <summary>
+        /// Method to search specific value
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public Node Search(int value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next;
+            }
+            return null;
         }
     }
 }

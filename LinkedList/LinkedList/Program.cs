@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LinkedList
+namespace LinkedListProblem
 {
     class Program
     {
@@ -14,7 +14,6 @@ namespace LinkedList
             list.AddToEnd(56);
             list.AddToEnd(30);
             list.AddToEnd(70);
-            list.RemoveLastNode();
             list.Display();
         }
     }
