@@ -12,10 +12,12 @@ namespace LinkedListProblem
             LinkedList list = new LinkedList();
 
             list.Add(56);
-            list.Add(30);            
+            list.Add(30);
             list.Add(70);
             list.InsertAtParticularPosition(3, 40);
+            list.DeleteNode(40);
             list.Display();
+            Console.WriteLine("\n" + "Linked List Size : " + list.Size());
         }
     }
 }

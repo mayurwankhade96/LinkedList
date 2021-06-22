@@ -142,5 +142,44 @@ namespace LinkedListProblem
             }
             return null;
         }
+
+        /// <summary>
+        /// Method to delete particular node
+        /// </summary>
+        /// <param name="data"></param>
+        public void DeleteNode(int data)
+        {
+            Node temp = head, prev = null;
+            if (temp != null && temp.data == data)
+            {
+                head = temp.next;
+                return;
+            }
+            while (temp != null && temp.data != data)
+            {
+                prev = temp;
+                temp = temp.next;
+            }
+            if (temp == null)
+                return;
+
+            prev.next = temp.next;
+        }
+
+        /// <summary>
+        /// Method to display size of Linked List
+        /// </summary>
+        /// <returns></returns>
+        public int Size()
+        {
+            Node temp = head;
+            int size = 0;
+            while (temp != null)
+            {
+                size++;
+                temp = temp.next;
+            }
+            return size;
+        }
     }
 }

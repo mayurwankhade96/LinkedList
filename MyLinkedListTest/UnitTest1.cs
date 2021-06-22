@@ -8,7 +8,7 @@ namespace MyLinkedListTest
         LinkedList list = new LinkedList();
         [Test]
         public void SearchTheNode()
-        {            
+        {
             list.Add(56);
             list.Add(30);
             list.Add(70);
@@ -25,6 +25,18 @@ namespace MyLinkedListTest
             list.InsertAtParticularPosition(3, 40);
             Node node = list.Search(40);
             Assert.AreEqual(40, node.data);
+        }
+
+        [Test]
+        public void GivenFourNumbersDeletedFourty()
+        {
+            list.Add(56);
+            list.Add(30);
+            list.Add(70);
+            list.InsertAtParticularPosition(3, 40);
+            list.DeleteNode(40);
+            int size = list.Size();
+            Assert.AreEqual(3, size);
         }
     }
 }
